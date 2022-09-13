@@ -22,14 +22,14 @@ public class threadvet extends Thread {
 				vethreadpar[i] = val;
 			}
 			double time1 = System.nanoTime();
-			System.out.print("entrada par (tempo for) = " + ((time1 - time0)/ Math.pow(10, 9)));
+			System.out.print("entrada par (tempo for) = " + ((time1 - time0) / Math.pow(10, 9)) + " segundos ");
 		} else {
 			for (int i : vethreadimpar) {
 				int val = ((int) (Math.random() * 11) + 1);
 				vethreadimpar[i] = val;
 			}
 			double time1 = System.nanoTime();
-			System.out.print("entrada par (tempo for each)= " + ((time1 - time0)/ Math.pow(10, 9)));
+			System.out.print("entrada par (tempo for each)= " + ((time1 - time0) / Math.pow(10, 9)) + " segundos ");
 		}
 
 	}
