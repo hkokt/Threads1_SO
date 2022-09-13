@@ -5,7 +5,7 @@ public class threadvet extends Thread {
 	private int num;
 	private int[] vet;
 
-	public threadvet(int num, int vet []) {
+	public threadvet(int num, int vet[]) {
 		this.num = num;
 		this.vet = vet;
 	}
@@ -14,7 +14,7 @@ public class threadvet extends Thread {
 		vetrandom(vet);
 	}
 
-	public void vetrandom(int vet []) {
+	public void vetrandom(int vet[]) {
 		double time0 = System.nanoTime();
 		if (num % 2 == 0) {
 			for (int i = 0; i < vet.length; i++) {
